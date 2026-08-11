@@ -4,311 +4,230 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>링커스 20기 모집 | 대학생 AI 커리어 동아리 (~8/23)</title>
-<meta name="description" content="현직 실무자를 직접 인터뷰하고 현장의 문제를 AI로 푸는 16주 과정. 링커스 20기 멤버를 모집합니다. 비전공·개발경험 무관, 서류 마감 8월 23일(일) 18시." />
-<meta name="theme-color" content="#14103F" />
+<meta name="description" content="현직 실무자를 인터뷰해 진짜 문제를 찾고, 16주 동안 AI로 두 개의 결과물을 만듭니다. 링커스 20기 모집. 비전공·개발경험 무관, 서류 마감 8월 23일(일) 18시." />
+<meta name="theme-color" content="#5B36C8" />
 <link rel="canonical" href="https://medeoduck.github.io/linkus20/" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://medeoduck.github.io/linkus20/" />
-<meta property="og:title" content="16주 뒤, 당신은 두 개의 결과물을 갖게 됩니다 — 링커스 20기 모집" />
+<meta property="og:title" content="AI를 배우지 않습니다. AI로 만듭니다 — 링커스 20기 모집" />
 <meta property="og:description" content="실무자를 만나 진짜 문제를 찾고, AI로 직접 만들어 푸는 16주. 비전공 가능 · 서류 마감 8/23(일) 18시" />
 <meta property="og:image" content="https://medeoduck.github.io/linkus20/og/linkus-20th-og.png" />
 <meta property="og:locale" content="ko_KR" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI를 배우지 않습니다. AI로 만듭니다 — 링커스 20기 모집" />
+<meta name="twitter:description" content="실무자를 만나 진짜 문제를 찾고, AI로 직접 만들어 푸는 16주. 비전공 가능 · 서류 마감 8/23(일) 18시" />
+<meta name="twitter:image" content="https://medeoduck.github.io/linkus20/og/linkus-20th-og.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Archivo:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 
 <style>
-/* ───── TOKENS : VELTA 레이아웃 + 링커스 딥퍼플 ───── */
+/* ───── TOKENS : 라이트 테마 + 링커스 바이올렛 ───── */
 :root{
-  --paper:#14103F;         /* 톤 A — 페이지 기본 바탕 (인디고) */
-  --tone-b:29,19,88;       /* 톤 B — 교차 배경 (보라 쪽으로 살짝) rgb */
-  --paper-2:#1B1655;
-  --ink:#FFFFFF;
-  --ink-70:rgba(255,255,255,.70);
-  --ink-45:rgba(255,255,255,.46);
-  --ink-28:rgba(255,255,255,.28);
-  --rule:rgba(255,255,255,.16);
+  --paper:#FFFFFF;
+  --paper-2:#F6F4FE;        /* 교차 섹션 배경 — 옅은 바이올렛 */
+  --ink:#1A1533;            /* 본문 잉크 */
+  --ink-2:#48425F;          /* 보조 텍스트 (흰 배경 7.9:1) */
+  --ink-3:#6B6488;          /* 캡션 (흰 배경 5.5:1) */
+  --rule:#E5E1F2;
 
-  --neon:#A99BFF;          /* 구 라임 자리 = 네온 바이올렛 */
-  --neon-2:#C9BCFF;
-  --mist:#8FA6D8;
+  --brand:#5B36C8;          /* 링커스 바이올렛 (흰 배경 7.6:1) */
+  --brand-dark:#47289F;
+  --brand-tint:#EFEAFD;
 
   --f-display:'Syne','Pretendard Variable',Pretendard,sans-serif;
-  --f-body:'Archivo','Pretendard Variable',Pretendard,sans-serif;
-  --f-mono:'DM Mono','Pretendard Variable',ui-monospace,monospace;
+  --f-body:'Pretendard Variable',Pretendard,-apple-system,sans-serif;
 
-  --gut:clamp(16px,3.2vw,44px);
+  --gut:clamp(18px,4vw,48px);
   --ease:cubic-bezier(.16,1,.3,1);
 }
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:70px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:76px}
 body{
   margin:0;background:var(--paper);color:var(--ink);
-  font-family:var(--f-body);font-size:clamp(15px,1.05vw,17px);line-height:1.6;
-  letter-spacing:-.006em;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;
+  font-family:var(--f-body);font-size:17px;line-height:1.65;
+  letter-spacing:-.012em;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
 }
-body::after{content:"";position:fixed;inset:0;z-index:900;pointer-events:none;opacity:.30;
-  mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
-::selection{background:var(--neon);color:var(--paper)}
-
-/* ───── PRIMITIVES ───── */
-.wrap{padding-inline:var(--gut)}
-.tag{font-family:var(--f-mono);font-size:11px;font-weight:500;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink-45)}
-.pill{display:inline-flex;align-items:center;gap:.5em;font-family:var(--f-mono);font-size:11px;
-  letter-spacing:.14em;text-transform:uppercase;padding:.62em 1.1em;border-radius:999px;
-  background:var(--neon);color:#161046;white-space:nowrap;font-weight:500}
-h1,h2,h3{font-family:var(--f-display);font-weight:700;letter-spacing:-.03em;line-height:1;margin:0}
-.h-xl{font-size:clamp(34px,6vw,92px)}
-.h-lg{font-size:clamp(27px,4vw,60px)}
+::selection{background:var(--brand);color:#fff}
+h1,h2,h3{font-weight:800;letter-spacing:-.035em;line-height:1.18;margin:0}
 p{margin:0}
-.lede{font-size:clamp(16px,1.5vw,23px);line-height:1.46;letter-spacing:-.015em;max-width:34ch}
 
-.sec{padding-block:clamp(64px,8vw,132px);position:relative}
-/* 섹션 배경 2톤 교차 — 위아래를 페이드아웃시켜 경계선이 보이지 않게 */
-.sec.alt::before{
-  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-  background:linear-gradient(180deg,
-    rgba(var(--tone-b),0) 0%,
-    rgba(var(--tone-b),1) 15%,
-    rgba(var(--tone-b),1) 85%,
-    rgba(var(--tone-b),0) 100%);
-}
-.sec-head{display:flex;justify-content:space-between;align-items:baseline;
-  padding-bottom:14px;margin-bottom:clamp(32px,4.4vw,64px);border-bottom:1px solid var(--rule)}
-.sec-head .num{font-family:var(--f-display);font-size:13px;letter-spacing:.02em;color:var(--ink-70)}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:var(--gut)}
+.sec{padding-block:clamp(56px,8vw,110px)}
+.sec.alt{background:var(--paper-2)}
+.tag{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--brand);margin-bottom:14px}
+.h-sec{font-size:clamp(26px,4.4vw,42px);margin-bottom:clamp(14px,2vw,22px)}
+.sub{font-size:clamp(16px,1.8vw,19px);color:var(--ink-2);max-width:46ch}
 
-.rv{opacity:0;transform:translateY(24px);
-  transition:opacity .85s var(--ease) var(--d,0ms),transform .85s var(--ease) var(--d,0ms)}
+.rv{opacity:0;transform:translateY(20px);
+  transition:opacity .7s var(--ease) var(--d,0ms),transform .7s var(--ease) var(--d,0ms)}
 .rv.in{opacity:1;transform:none}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;
-  font-family:var(--f-body);font-weight:600;font-size:15px;letter-spacing:-.01em;
-  padding:1.05em 2.1em;border-radius:999px;text-decoration:none;border:0;cursor:pointer;
-  background:var(--neon);color:#161046;white-space:nowrap;
-  transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
-.btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(169,155,255,.42)}
-.btn-o{background:transparent;color:var(--ink);border:1px solid var(--rule)}
-.btn-o:hover{background:rgba(255,255,255,.08);box-shadow:none}
-.btn-lg{font-size:clamp(16px,1.5vw,19px);padding:1.15em 2.6em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.45em;
+  font-family:var(--f-body);font-weight:700;font-size:16px;letter-spacing:-.01em;
+  padding:1em 2em;border-radius:14px;text-decoration:none;border:0;cursor:pointer;
+  background:var(--brand);color:#fff;white-space:nowrap;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease)}
+.btn:hover{transform:translateY(-2px);background:var(--brand-dark);
+  box-shadow:0 10px 28px rgba(91,54,200,.28)}
+.btn:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.btn-o{background:#fff;color:var(--brand);border:1.5px solid var(--brand)}
+.btn-o:hover{background:var(--brand-tint);box-shadow:none}
+.btn-lg{font-size:clamp(17px,1.8vw,20px);padding:1.1em 2.5em}
 
 /* ───── TOP BAR ───── */
-.topbar{position:fixed;top:0;left:0;right:0;z-index:600;height:56px;
-  display:flex;justify-content:space-between;align-items:center;padding-inline:var(--gut);
-  background:rgba(20,16,63,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+.topbar{position:fixed;top:0;left:0;right:0;z-index:600;height:64px;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;padding-inline:var(--gut);
+  background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid var(--rule)}
-.mark{font-family:var(--f-display);font-weight:800;font-size:15px;letter-spacing:.16em;
-  color:var(--ink);text-decoration:none}
-.topbar .mid{flex:1;min-width:0;padding-inline:20px;font-size:12.5px;color:var(--ink-45);
+.mark{font-family:var(--f-display);font-weight:800;font-size:17px;letter-spacing:.14em;
+  color:var(--brand);text-decoration:none}
+.topbar .mid{flex:1;min-width:0;font-size:14px;color:var(--ink-2);
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.topbar .mid b{color:var(--neon);font-weight:600}
-.topbar .btn{padding:.6em 1.3em;font-size:13px}
+.topbar .mid b{color:var(--brand);font-weight:700}
+.topbar .btn{padding:.65em 1.4em;font-size:14.5px;min-height:44px}
 @media(max-width:620px){.topbar .mid{display:none}}
 
 /* ───── HERO ───── */
-.hero{position:relative;min-height:100svh;margin:8px;border-radius:6px;overflow:hidden;
-  display:flex;flex-direction:column;justify-content:space-between;padding-top:56px;
+.hero{padding:calc(64px + clamp(48px,8vw,96px)) 0 clamp(48px,7vw,88px);
   background:
-    radial-gradient(120% 90% at 18% 8%, #3D31C4 0%, transparent 58%),
-    radial-gradient(110% 100% at 86% 26%, #5B36B8 0%, transparent 55%),
-    linear-gradient(180deg,#2A2196 0%,#1E1770 48%,#17124E 100%)}
-.orb{position:absolute;border-radius:50%;pointer-events:none;
-  background:radial-gradient(58% 52% at 34% 24%, rgba(255,255,255,.62) 0%, rgba(255,255,255,0) 60%),
-             radial-gradient(100% 100% at 50% 50%, rgba(190,178,255,.30) 0%, rgba(110,92,220,.16) 100%);
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:inset 0 -14px 54px rgba(255,255,255,.20),0 30px 90px rgba(20,12,70,.35);
-  animation:float 18s ease-in-out infinite}
-.orb-a{width:74vmin;height:74vmin;left:-13vmin;bottom:-32vmin}
-.orb-b{width:52vmin;height:52vmin;right:-7vmin;bottom:-24vmin;animation-duration:23s;animation-direction:reverse}
-@keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-3%,0)}}
-
-#wordmark{position:relative;z-index:2;width:100%;display:block;
-  margin-top:clamp(40px,7vh,96px);padding-inline:clamp(10px,2vw,28px)}
-#wordmark text{font-family:var(--f-display);font-weight:800;fill:var(--neon)}
-.hero-lede{position:absolute;z-index:2;left:clamp(14px,2.6vw,34px);top:46%;
-  font-family:var(--f-display);font-weight:700;
-  font-size:clamp(19px,2.3vw,34px);line-height:1.24;letter-spacing:-.025em;
-  color:#fff;max-width:19ch;text-shadow:0 2px 30px rgba(20,12,70,.5)}
-.hero-lede b{color:var(--neon-2);font-weight:700}
-.hero-meta{position:relative;z-index:2;display:flex;align-items:center;gap:clamp(14px,3.4vw,52px);
-  padding:0 clamp(14px,2.6vw,34px) clamp(16px,2.6vw,30px);flex-wrap:wrap}
-.hero-meta .tag{color:rgba(255,255,255,.72)}
-.hero-cta{position:absolute;z-index:2;right:clamp(14px,2.6vw,34px);bottom:clamp(58px,7vw,86px);
-  display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-/* 모바일: 히어로 요소를 절대배치 → 일반 흐름으로 바꿔 빈 공백 제거 */
-@media(max-width:820px){
-  .hero{min-height:auto;gap:24px;padding-bottom:20px}
-  #wordmark{margin-top:24px}
-  .hero-lede{position:static;max-width:100%;
-    padding-inline:clamp(14px,2.6vw,34px);font-size:clamp(21px,5.8vw,31px)}
-  .hero-cta{position:static;padding-inline:clamp(14px,2.6vw,34px);gap:10px}
-  .hero-cta .btn{flex:1;justify-content:center}
-  .hero-meta{gap:8px 14px;padding-bottom:6px}
-  .orb-a{width:82vmin;height:82vmin;left:-24vmin;bottom:-40vmin}
-  .orb-b{width:56vmin;height:56vmin;right:-16vmin;bottom:-30vmin}
+    radial-gradient(90% 70% at 85% 0%, #EDE7FF 0%, transparent 60%),
+    radial-gradient(70% 60% at 8% 20%, #F3EFFF 0%, transparent 55%),
+    #FFFFFF;
+  text-align:center}
+.hero .kicker{display:inline-flex;align-items:center;gap:.55em;font-size:14.5px;font-weight:700;
+  color:var(--brand);background:var(--brand-tint);border:1px solid #DDD2FA;
+  padding:.55em 1.15em;border-radius:999px;margin-bottom:clamp(20px,3vw,30px)}
+.hero h1{font-size:clamp(34px,6.4vw,64px);letter-spacing:-.04em;line-height:1.16}
+.hero h1 b{color:var(--brand)}
+.hero .lede{font-size:clamp(17px,2vw,21px);color:var(--ink-2);
+  max-width:34ch;margin:clamp(18px,2.6vw,26px) auto 0}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;
+  margin-top:clamp(28px,4vw,40px)}
+.hero .fine{margin-top:18px;font-size:14.5px;color:var(--ink-3)}
+@media(max-width:480px){
+  .hero-cta{flex-direction:column;align-items:stretch;padding-inline:var(--gut)}
 }
 
-/* ───── N°001 WHAT ───── */
-.what{display:grid;grid-template-columns:1fr;gap:clamp(26px,3.6vw,54px)}
-@media(min-width:940px){.what{grid-template-columns:1.1fr .9fr;align-items:start}}
-.quotes{display:flex;flex-direction:column;gap:1px;border-top:1px solid var(--rule)}
-.q{padding:18px 0;border-bottom:1px solid var(--rule)}
-.q b{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--neon);margin-bottom:8px;font-weight:500}
-.q p{font-size:14.5px;color:var(--ink-70);line-height:1.62}
-.stats{display:flex;gap:clamp(20px,3.4vw,56px);flex-wrap:wrap;margin-top:30px}
-.stats div{min-width:110px}
-.stats b{display:block;font-family:var(--f-display);font-weight:700;
-  font-size:clamp(26px,3.2vw,46px);letter-spacing:-.035em;line-height:1;color:var(--neon)}
-.stats span{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--ink-45)}
+/* ───── 실적 배지 ───── */
+.awards{padding-block:clamp(36px,5vw,56px);border-block:1px solid var(--rule);background:#fff}
+.awards .cap{text-align:center;font-size:15px;font-weight:700;letter-spacing:.02em;
+  color:var(--ink-2);margin-bottom:clamp(20px,3vw,30px)}
+.aw-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:760px){.aw-grid{grid-template-columns:repeat(4,1fr)}}
+.aw{border:1px solid var(--rule);border-radius:16px;padding:20px 18px;text-align:center;
+  background:#fff}
+.aw b{display:block;font-family:var(--f-display);font-weight:800;
+  font-size:clamp(24px,3vw,34px);letter-spacing:-.02em;color:var(--brand);line-height:1.1}
+.aw span{display:block;margin-top:8px;font-size:15px;font-weight:600;color:var(--ink-2);line-height:1.45}
 
-/* ───── MARQUEE ───── */
-.marquee{background:var(--neon);color:#161046;border-block:1px solid rgba(255,255,255,.2);
-  overflow:hidden;padding-block:12px}
-.marquee ul{display:flex;gap:44px;list-style:none;margin:0;padding:0;width:max-content;
-  animation:slide 30s linear infinite}
-.marquee li{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-  display:flex;align-items:center;gap:44px;white-space:nowrap;font-weight:500}
-.marquee li::after{content:"◆";font-size:7px;opacity:.55}
-@keyframes slide{to{transform:translateX(-50%)}}
+/* ───── 소개 + 숫자 ───── */
+.stats{display:flex;gap:clamp(28px,5vw,72px);flex-wrap:wrap;margin-top:clamp(28px,4vw,44px)}
+.stats b{display:block;font-family:var(--f-display);font-weight:800;
+  font-size:clamp(32px,4vw,52px);letter-spacing:-.03em;line-height:1;color:var(--brand)}
+.stats span{display:block;margin-top:6px;font-size:15px;font-weight:600;color:var(--ink-3)}
 
-/* ───── N°002 HOW ───── */
-.blk{display:flex;align-items:baseline;gap:16px;margin-bottom:20px}
-.blk .n{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,2.8vw,40px);
-  letter-spacing:-.03em;color:var(--neon)}
-.cols{display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule)}
-@media(min-width:860px){.cols{grid-template-columns:repeat(3,1fr)}}
-.col{padding:22px 0 28px;border-bottom:1px solid var(--rule)}
-@media(min-width:860px){
-  .col{padding:24px clamp(14px,1.8vw,26px) 34px;border-bottom:0;border-left:1px solid var(--rule)}
-  .col:first-child{border-left:0;padding-left:0}
-}
-.col .idx{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--ink-28);
-  display:block;margin-bottom:14px}
-.col h3{font-size:clamp(19px,1.9vw,26px);margin-bottom:12px}
-.col p{color:var(--ink-70);font-size:14.5px;line-height:1.66}
-.col .keep{margin-top:16px;padding-top:14px;border-top:1px dashed var(--rule);
-  font-size:13.5px;color:var(--neon-2)}
-.col .keep em{font-style:normal;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink-28);display:block;margin-bottom:5px}
-.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:clamp(26px,3vw,42px)}
-.chip{padding:.6em 1em;border-radius:999px;font-size:13px;color:var(--ink-70);
-  border:1px solid var(--rule)}
-.chip b{color:var(--ink);font-weight:600}
-.note{margin-top:16px;font-size:12.5px;color:var(--ink-28)}
+/* ───── 커리큘럼 ───── */
+.steps{display:grid;grid-template-columns:1fr;gap:14px;margin-top:clamp(26px,3.4vw,40px)}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:1px solid var(--rule);border-radius:18px;
+  padding:clamp(22px,2.6vw,30px);display:flex;flex-direction:column;gap:12px;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.step:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(46,32,110,.10)}
+.step .wk{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--brand)}
+.step h3{font-size:clamp(20px,2vw,24px)}
+.step p{font-size:16px;color:var(--ink-2);line-height:1.6}
+.step p b{color:var(--ink)}
 
-/* Decision Log */
-.dlog{margin-top:clamp(44px,6vw,88px)}
-.logs{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:880px){.logs{grid-template-columns:repeat(3,1fr)}}
-.log{font-family:var(--f-mono);border:1px solid var(--rule);border-radius:4px;
-  padding:clamp(16px,1.9vw,22px);background:rgba(0,0,0,.16)}
-.log .no{font-size:10px;letter-spacing:.16em;color:var(--ink-28);display:block;margin-bottom:14px}
-.log dt{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--neon);margin-bottom:4px}
-.log dd{margin:0 0 12px;font-family:var(--f-body);font-size:13.5px;line-height:1.58;color:var(--ink-70)}
-.log dd:last-child{margin-bottom:0}
-.log dd.key{color:var(--ink);font-weight:600}
+/* ───── 모집 안내 ───── */
+.spec{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:clamp(26px,3.4vw,40px)}
+@media(min-width:820px){.spec{grid-template-columns:repeat(4,1fr)}}
+.cell{background:#fff;border:1px solid var(--rule);border-radius:18px;
+  padding:clamp(18px,2.4vw,26px)}
+.cell .k{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+.cell .v{display:block;font-size:clamp(18px,2vw,22px);font-weight:800;
+  letter-spacing:-.025em;line-height:1.3;margin-bottom:8px}
+.cell .d{font-size:15.5px;color:var(--ink-2);line-height:1.55}
 
-/* ───── N°003 WHY (변화 큰 리스트) ───── */
-.why{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
-.why li{border-bottom:1px solid var(--rule)}
-.why .row{display:flex;align-items:center;justify-content:space-between;gap:20px;
-  padding:clamp(16px,2.2vw,26px) 0;transition:padding .5s var(--ease),background .5s var(--ease)}
-.why li:hover .row{padding-inline:clamp(10px,1.6vw,22px);background:var(--neon);color:#161046}
-.why .word{font-family:var(--f-display);font-weight:700;
-  font-size:clamp(24px,4.4vw,60px);letter-spacing:-.035em;line-height:1}
-.why .ba{text-align:right;font-size:13.5px;color:var(--ink-45);max-width:34ch;line-height:1.6}
-.why li:hover .ba{color:rgba(22,16,70,.82)}
-.why .ba s{opacity:.55}
-@media(max-width:760px){.why .ba{display:none}}
-
-/* ───── N°004 모집 요강 ───── */
-.spec{display:grid;grid-template-columns:1fr;gap:1px;background:var(--rule);
-  border:1px solid var(--rule)}
-@media(min-width:680px){.spec{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1080px){.spec{grid-template-columns:repeat(4,1fr)}}
-.cell{background:var(--paper);padding:clamp(18px,2.2vw,28px);min-height:clamp(150px,17vw,200px);
-  display:flex;flex-direction:column;justify-content:space-between;
-  transition:background .45s var(--ease),color .45s var(--ease)}
-.cell:hover{background:var(--neon);color:#161046}
-.cell:hover .tag{color:rgba(22,16,70,.7)}
-.cell:hover .v{color:#161046}
-.cell .v{font-family:var(--f-display);font-weight:700;font-size:clamp(19px,2vw,27px);
-  letter-spacing:-.028em;line-height:1.16;margin-block:auto 8px}
-.cell .d{font-size:13px;color:var(--ink-45);line-height:1.55}
-.cell:hover .d{color:rgba(22,16,70,.72)}
-
-.sched{list-style:none;margin:clamp(28px,3.4vw,48px) 0 0;padding:0;
-  display:grid;grid-template-columns:1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.sched{list-style:none;margin:clamp(24px,3vw,36px) 0 0;padding:0;
+  display:grid;grid-template-columns:1fr;gap:10px}
 @media(min-width:760px){.sched{grid-template-columns:repeat(5,1fr)}}
-.sched li{background:var(--paper);padding:16px clamp(14px,1.6vw,20px)}
-.sched li.now{background:rgba(169,155,255,.14)}
-.sched .st{display:block;font-size:14px;font-weight:600;letter-spacing:-.02em;margin-bottom:5px}
-.sched li.now .st{color:var(--neon)}
-.sched .dt{display:block;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-45);line-height:1.5}
-.must{display:inline-block;margin-left:6px;padding:.15em .55em;border-radius:999px;
-  font-family:var(--f-mono);font-size:9.5px;letter-spacing:.06em;
-  background:rgba(255,150,150,.18);border:1px solid rgba(255,160,160,.36);color:#FFC4C4}
-.openbox{margin-top:clamp(26px,3vw,42px);padding:clamp(18px,2.2vw,28px);
-  border:1px solid var(--neon);border-radius:4px;text-align:center;
-  font-size:clamp(15px,1.5vw,19px);font-weight:600;letter-spacing:-.022em;line-height:1.6}
-.openbox span{color:var(--neon)}
+.sched li{background:#fff;border:1px solid var(--rule);border-radius:14px;
+  padding:16px;text-align:center}
+.sched li.now{background:var(--brand);border-color:var(--brand)}
+.sched .st{display:block;font-size:15.5px;font-weight:700;margin-bottom:4px}
+.sched li.now .st,.sched li.now .dt{color:#fff}
+.sched .dt{display:block;font-size:14px;color:var(--ink-3)}
+.must{display:inline-block;margin-left:5px;padding:.12em .5em;border-radius:999px;
+  font-size:11.5px;font-weight:700;background:rgba(255,255,255,.22);
+  border:1px solid rgba(255,255,255,.5);color:#fff}
+@media(max-width:759px){
+  .sched li{display:flex;justify-content:space-between;align-items:center;text-align:left}
+  .sched .st{margin-bottom:0}
+}
 
-/* ───── N°005 FAQ ───── */
-.faq{border-top:1px solid var(--rule)}
+/* ───── FAQ ───── */
+.faq{border-top:1px solid var(--rule);margin-top:clamp(22px,3vw,34px)}
 .qa{border-bottom:1px solid var(--rule)}
-.qa button{width:100%;display:grid;grid-template-columns:auto 1fr auto;
-  gap:clamp(12px,2.2vw,28px);align-items:start;background:none;border:0;cursor:pointer;
-  color:inherit;text-align:left;padding:clamp(16px,2vw,24px) 0;font-family:var(--f-body)}
-.qa .qn{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--ink-28);padding-top:.55em}
-.qa .qt{font-family:var(--f-display);font-weight:700;letter-spacing:-.025em;
-  font-size:clamp(16px,1.8vw,25px);line-height:1.22}
-.qa .sign{width:25px;height:25px;flex:none;border-radius:50%;border:1px solid var(--rule);
-  display:grid;place-items:center;font-family:var(--f-mono);font-size:13px;line-height:1;color:var(--neon);
-  transition:transform .5s var(--ease),background .5s var(--ease)}
-.qa[data-open="true"] .sign{transform:rotate(45deg);background:var(--neon);color:#161046}
-.qa[data-open="true"] .qt{color:var(--neon)}
-.ans{overflow:hidden;height:0;transition:height .5s var(--ease)}
-.ans>div{padding:0 0 clamp(20px,2.4vw,28px);color:var(--ink-70);max-width:64ch;
-  white-space:pre-line;line-height:1.74}
-@media(min-width:860px){.ans>div{margin-left:calc(10ch + clamp(12px,2.2vw,28px))}}
-.ans a{color:var(--neon);word-break:break-all}
+.qa button{width:100%;display:flex;gap:16px;align-items:center;justify-content:space-between;
+  background:none;border:0;cursor:pointer;color:inherit;text-align:left;
+  padding:clamp(18px,2.2vw,24px) 0;font-family:var(--f-body)}
+.qa button:focus-visible{outline:3px solid var(--brand);outline-offset:-3px;border-radius:8px}
+.qa .qt{font-size:clamp(16.5px,1.9vw,20px);font-weight:700;letter-spacing:-.02em;line-height:1.4}
+.qa .sign{width:28px;height:28px;flex:none;border-radius:50%;border:1.5px solid var(--rule);
+  display:grid;place-items:center;font-size:16px;line-height:1;color:var(--brand);
+  transition:transform .4s var(--ease),background .4s var(--ease)}
+.qa[data-open="true"] .sign{transform:rotate(45deg);background:var(--brand);border-color:var(--brand);color:#fff}
+.qa[data-open="true"] .qt{color:var(--brand)}
+.ans{overflow:hidden;height:0;transition:height .4s var(--ease)}
+.ans>div{padding:0 0 clamp(18px,2.2vw,24px);color:var(--ink-2);max-width:62ch;
+  white-space:pre-line;font-size:16px;line-height:1.7}
+.ans a{color:var(--brand);font-weight:600;word-break:break-all}
 
-/* ───── N°006 APPLY ───── */
-.apply{padding-block:clamp(72px,10vw,160px);text-align:left}
-.apply .h-xl{margin-bottom:clamp(26px,3.4vw,48px)}
-.apply .row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
-.apply .dl{font-family:var(--f-mono);font-size:13px;color:var(--ink-45);letter-spacing:-.01em}
+/* ───── APPLY ───── */
+.apply{background:var(--brand);color:#fff;text-align:center}
+.apply .h-sec{color:#fff;font-size:clamp(28px,4.8vw,46px)}
+.apply .sub{color:rgba(255,255,255,.85);margin-inline:auto}
+.apply .btn{background:#fff;color:var(--brand)}
+.apply .btn:hover{background:#F3EFFF;box-shadow:0 10px 28px rgba(0,0,0,.18)}
+.apply .btn-o{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.apply .btn-o:hover{background:rgba(255,255,255,.12)}
+.apply .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;
+  margin-top:clamp(26px,3.4vw,38px)}
+.apply .dl{margin-top:18px;font-size:15px;color:rgba(255,255,255,.75)}
+@media(max-width:480px){.apply .row{flex-direction:column;align-items:stretch}}
 
-footer{border-top:1px solid var(--rule);padding-block:32px 90px}
-.f-grid{display:grid;grid-template-columns:1fr;gap:24px}
+footer{border-top:1px solid var(--rule);padding-block:36px 100px;background:#fff}
+.f-grid{display:grid;grid-template-columns:1fr;gap:22px}
 @media(min-width:760px){.f-grid{grid-template-columns:repeat(3,1fr)}}
-.f-grid p{font-family:var(--f-mono);font-size:11px;letter-spacing:.05em;line-height:1.95;color:var(--ink-45);margin:0}
-.f-grid strong{display:block;color:var(--ink);letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
-.f-grid a{color:var(--ink-45);text-decoration:none}
-.f-grid a:hover{color:var(--neon)}
-.f-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:30px;
+.f-grid p{font-size:14px;line-height:1.9;color:var(--ink-2);margin:0}
+.f-grid strong{display:block;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;
+  font-size:12.5px;margin-bottom:6px}
+.f-grid a{color:var(--ink-2);text-decoration:none}
+.f-grid a:hover{color:var(--brand)}
+.f-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:28px;
   padding-top:20px;border-top:1px solid var(--rule)}
-.f-bottom p{font-size:11px;color:var(--ink-28);font-family:var(--f-mono);line-height:1.8;margin:0;max-width:60ch}
+.f-bottom p{font-size:12.5px;color:var(--ink-3);line-height:1.8;margin:0;max-width:60ch}
 
 /* 모바일 하단 고정 CTA */
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:610;display:none;gap:10px;
   padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));
-  background:rgba(20,16,63,.92);backdrop-filter:blur(16px);border-top:1px solid var(--rule);
-  transform:translateY(120%);transition:transform .45s var(--ease)}
+  background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-top:1px solid var(--rule);
+  transform:translateY(120%);transition:transform .4s var(--ease)}
 .dock.show{transform:none}
-.dock .btn{flex:1;padding:.9em 1em;font-size:14.5px}
-.dock .btn-o{flex:0 0 74px}
+.dock .btn{flex:1;padding:.95em 1em;font-size:15.5px}
+.dock .btn-o{flex:0 0 78px}
 @media(max-width:860px){.dock{display:flex}}
 </style>
+<noscript><style>.rv{opacity:1;transform:none}.ans{height:auto}</style></noscript>
 </head>
 <body id="top">
 
@@ -321,312 +240,170 @@ footer{border-top:1px solid var(--rule);padding-block:32px 90px}
 <main>
 
 <!-- ═══ HERO ═══ -->
-<section class="hero">
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
-
-  <svg id="wordmark" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet" role="img" aria-label="LINKUS">
-    <text x="500" y="160" text-anchor="middle" textLength="985" lengthAdjust="spacingAndGlyphs" font-size="190">LINKUS</text>
-  </svg>
-
-  <h1 class="hero-lede">이제 누구나 AI를 씁니다.<br>차이는 <b>어떻게 쓰느냐</b>에서 갈립니다.</h1>
-
+<section class="hero wrap">
+  <span class="kicker">링커스 20기 모집 · 서류 마감 8/23(일) 18:00</span>
+  <h1>AI를 배우지 않습니다.<br><b>AI로 만듭니다.</b></h1>
+  <p class="lede">현직 실무자를 인터뷰해 진짜 문제를 찾고,<br>
+    16주 동안 AI로 <b>두 개의 결과물</b>을 만들며 성장합니다.</p>
   <div class="hero-cta">
     <a class="btn btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
-    <a class="btn btn-o" href="#how">16주 먼저 보기</a>
+    <a class="btn btn-o btn-lg" href="#recruit">모집 안내 보기</a>
   </div>
+  <p class="fine">비전공·개발 경험 무관 · 졸업생 지원 가능</p>
+</section>
 
-  <div class="hero-meta">
-    <span class="pill">Apply</span>
-    <span class="tag">N°001</span>
-    <span class="tag">서류 마감 8/23(일) 18:00 · 졸업생 지원 가능</span>
+<!-- ═══ 실적 ═══ -->
+<section class="awards wrap" aria-label="수상 및 선정 이력">
+  <p class="cap">외부 기관이 인정한 링커스</p>
+  <div class="aw-grid">
+    <div class="aw rv"><b>TOP 2</b><span>2026 캠퍼스픽<br>창업·취업 동아리</span></div>
+    <div class="aw rv" style="--d:70ms"><b>TOP 50</b><span>2023·2024 아웃캠퍼스<br>명품동아리</span></div>
+    <div class="aw rv" style="--d:140ms"><b>TOP 10</b><span>2017~2019<br>명품동아리</span></div>
+    <div class="aw rv" style="--d:210ms"><b>대표동아리</b><span>2018·2019<br>스펙업 선정</span></div>
   </div>
 </section>
 
-<!-- ═══ N°001 WHAT ═══ -->
-<section class="sec wrap alt" id="what">
-  <div class="sec-head"><span class="num">n.001</span><span class="tag">What</span></div>
-
-  <div class="what">
-    <div>
-      <h2 class="h-xl rv">AI를 써봤다는 것과,<br>쓸 줄 안다는 것.</h2>
-      <p class="lede rv" style="--d:110ms;margin-top:26px;color:var(--ink-70)">
-        링커스는 국내 최초 실무형 AI 커리어 개발 커뮤니티입니다.
-        AI를 '배우는' 모임이 아니라 <b style="color:var(--ink)">'쓰는' 모임</b>입니다.
-      </p>
-      <p class="rv" style="--d:150ms;margin-top:18px;color:var(--ink-70);max-width:44ch">
-        실제로 그 일을 하는 사람을 직접 인터뷰하고, 거기서 찾은 현장의 문제로 혼자 하나를 만들고,
-        그다음 팀으로 하나를 더 만듭니다. 16주 뒤에 남는 건 수료증이 아니라 두 개의 결과물과,
-        그걸 왜 그렇게 만들었는지 설명할 수 있는 근거입니다.
-      </p>
-      <div class="stats rv" style="--d:200ms">
-        <div><b>1,300+</b><span>누적 수료생</span></div>
-        <div><b>300+</b><span>현직 실무자</span></div>
-        <div><b>20기</b><span>2016년 시작</span></div>
-      </div>
-    </div>
-
-    <div class="quotes rv" style="--d:170ms">
-      <div class="q"><b>써보긴 했는데</b><p>"결과물은 있는데, 'AI 할 줄 아세요?'라는 질문엔 답이 잘 안 나옵니다. 설명할 수 있는 과정이 없어서요."</p></div>
-      <div class="q"><b>시작을 못 했는데</b><p>"강의를 결제해두고 3주째 1강에 멈춰 있습니다. 혼자 하니까 멈춰도 아무 일이 안 일어나요."</p></div>
-      <div class="q"><b>방향을 모르겠는데</b><p>"공부는 하는데 이게 현장에서 쓰이는 방식인지 모르겠습니다. 물어볼 사람이 없어요."</p></div>
-      <div class="q"><b style="color:var(--ink)">링커스</b><p style="color:var(--ink)">세 경우 모두, 부족한 건 의지가 아니라 <b style="color:var(--neon)">구조</b>입니다.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ MARQUEE (실적) ═══ -->
-<div class="marquee" aria-label="수상 및 참가 이력">
-  <ul id="mq">
-    <li>2026 캠퍼스픽 창업·취업 동아리 TOP2</li>
-    <li>2024 아웃캠퍼스 명품동아리 TOP50</li>
-    <li>2023 아웃캠퍼스 명품동아리 TOP50</li>
-    <li>2017·2018·2019 명품동아리 TOP10</li>
-    <li>2018·2019 스펙업 대표동아리</li>
-    <li>유니브엑스포 참가</li>
-  </ul>
-</div>
-
-<!-- ═══ N°002 HOW ═══ -->
-<section class="sec wrap" id="how">
-  <div class="sec-head"><span class="num">n.002</span><span class="tag">How · 16 Weeks</span></div>
-
-  <h2 class="h-lg rv" style="max-width:16ch;margin-bottom:clamp(34px,4.4vw,66px)">
-    묻고, 혼자 만들고,<br>같이 만듭니다.
-  </h2>
-
-  <div class="blk rv"><span class="n">01</span><span class="tag">커리큘럼 — 2026.09.05 ~ 12.26</span></div>
-  <div class="cols">
-    <article class="col rv"><span class="idx">MAIN 01 · 1~5주차</span>
-      <h3>링커슈</h3>
-      <p>현업에서 실제로 AI를 쓰는 사람을 직접 찾아 인터뷰합니다. "현장에서는 이 문제를 어떻게 푸나요"를 직접 확인하고, 그 답을 프로젝트 주제로 가져옵니다. 300명 이상의 실무자 네트워크가 여기서 쓰입니다.</p>
-      <p class="keep"><em>남는 것</em>현장에서 검증된 문제 정의 하나</p>
-    </article>
-    <article class="col rv" style="--d:100ms"><span class="idx">MAIN 02 · 6~10주차</span>
-      <h3>개인 프로젝트</h3>
-      <p>찾은 문제를 혼자 힘으로 끝까지 만들어봅니다. 막히는 지점을 한 번 겪어봐야 팀에서 제 몫을 할 수 있습니다. 매주 진행 상황을 공유하고 AI 코칭과 피드백을 받습니다.</p>
-      <p class="keep"><em>남는 것</em>내 이름으로 설명할 수 있는 결과물 하나</p>
-    </article>
-    <article class="col rv" style="--d:200ms"><span class="idx">MAIN 03 · 11~16주차</span>
-      <h3>팀 프로젝트</h3>
-      <p>각자 얻은 것을 들고 팀을 만듭니다. 충돌하고 조율해서 하나의 결과물을 완성하고, 마지막 주에 전체 앞에서 발표합니다.</p>
-      <p class="keep"><em>남는 것</em>팀으로 만든 결과물과 협업 경험</p>
-    </article>
-  </div>
-
-  <div class="chips rv">
-    <span class="chip"><b>AI 코칭</b> — 처음 다루는 사람도 같은 출발선에</span>
-    <span class="chip"><b>실무자의 하루</b> — 현직자의 하루를 직접 듣는 시간</span>
-    <span class="chip"><b>산학협력</b></span>
-    <span class="chip"><b>취업 코칭</b></span>
-    <span class="chip"><b>기업 탐방</b></span>
-  </div>
-  <p class="note rv">주차 표기와 부가 프로그램 운영 범위는 기수 사정에 따라 조정될 수 있습니다.</p>
-
-  <!-- Decision Log -->
-  <div class="dlog">
-    <div class="blk rv"><span class="n">02</span><span class="tag">Decision Log — 링커스에만 있는 것</span></div>
-    <p class="rv" style="color:var(--ink-70);max-width:52ch;margin-bottom:clamp(24px,2.8vw,38px)">
-      AI를 어떻게 활용하고 어떻게 검증했는지 16주 내내 기록합니다. 이 기록이 그대로 포트폴리오가 됩니다.
-      같은 방식으로 동아리 운영도 기록합니다 — 결정에는 이유가 있고, 그 이유는 공개됩니다.
+<!-- ═══ 소개 (짧게) ═══ -->
+<section class="sec alt" id="about">
+  <div class="wrap">
+    <span class="tag rv">About</span>
+    <h2 class="h-sec rv">16주 뒤, 내 이름으로 설명할<br>결과물 두 개가 남습니다.</h2>
+    <p class="sub rv" style="--d:80ms">
+      링커스는 2016년 시작한 실무형 AI 커리어 동아리입니다.
+      AI를 '배우는' 모임이 아니라 '쓰는' 모임 — 현장의 문제를 AI로 직접 풀며 성장합니다.
     </p>
-    <div class="logs">
-      <article class="log rv"><span class="no">LOG 01</span><dl>
-        <dt>결정</dt><dd class="key">커리큘럼 순서를 '링커슈 → 개인 → 팀'으로 바꿨다</dd>
-        <dt>배경</dt><dd>팀 프로젝트를 먼저 하니 잘하는 사람에게 일이 몰렸다</dd>
-        <dt>버린 선택지</dt><dd>역할 강제 배분 — 개인 실력 차가 그대로 남아 기각</dd>
-      </dl></article>
-      <article class="log rv" style="--d:100ms"><span class="no">LOG 02</span><dl>
-        <dt>결정</dt><dd class="key">20기부터 졸업생 지원을 허용한다</dd>
-        <dt>배경</dt><dd>재학 여부가 기여도와 상관없다는 판단</dd>
-        <dt>버린 선택지</dt><dd>졸업생은 OB 멘토로만 참여 — 자격 자체를 넓히는 편이 맞다고 결론</dd>
-      </dl></article>
-      <article class="log rv" style="--d:200ms"><span class="no">LOG 03</span><dl>
-        <dt>결정</dt><dd class="key">토요일 오후 4시간 고정, 시험기간 2주는 쉰다</dd>
-        <dt>배경</dt><dd>오전 시작은 참석률이 낮았고, 시험기간엔 프로젝트 질이 떨어졌다</dd>
-        <dt>버린 선택지</dt><dd>격주 6시간 — 2주 간격은 흐름이 끊겨 기각</dd>
-      </dl></article>
+    <div class="stats rv" style="--d:160ms">
+      <div><b>1,300+</b><span>누적 수료생</span></div>
+      <div><b>300+</b><span>현직 실무자 네트워크</span></div>
+      <div><b>20기</b><span>2016년 시작</span></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ N°003 WHY ═══ -->
-<section class="sec wrap alt" id="why">
-  <div class="sec-head"><span class="num">n.003</span><span class="tag">Why — 20기의 변화</span></div>
-
-  <ul class="why">
-    <li class="rv"><div class="row">
-      <span class="word">자격 확대</span>
-      <span class="ba"><s>재학·휴학·졸업유예생만</s> → 20기부터 졸업생도 지원 가능. 학적이 아니라 함께 만들 의지를 기준으로.</span>
-    </div></li>
-    <li class="rv" style="--d:80ms"><div class="row">
-      <span class="word">순서 변경</span>
-      <span class="ba"><s>팀 프로젝트로 시작</s> → 링커슈 → 개인 → 팀. 혼자 끝까지 만들어본 사람이 모여야 팀이 굴러갑니다.</span>
-    </div></li>
-    <li class="rv" style="--d:160ms"><div class="row">
-      <span class="word">기록 공개</span>
-      <span class="ba"><s>AI 활용은 각자의 머릿속에</s> → Decision Log로 남깁니다. 기록 자체가 포트폴리오가 됩니다.</span>
-    </div></li>
-  </ul>
-
-  <p class="lede rv" style="--d:220ms;margin-top:clamp(34px,4vw,60px);max-width:40ch">
-    프롬프트를 잘 쓰는 게 아니라,<br><span style="color:var(--neon)">왜 그렇게 썼는지 설명할 수 있는 것.</span>
-  </p>
-  <p class="rv" style="--d:260ms;margin-top:16px;color:var(--ink-70);max-width:48ch">
-    만들고, 왜 그렇게 만들었는지 쓰고, 다른 사람 앞에서 설명하고, 반박받고, 고칩니다.
-    16주 동안 반복하는 게 정확히 이 훈련입니다.
-  </p>
-</section>
-
-<!-- ═══ N°004 모집 요강 ═══ -->
-<section class="sec wrap" id="apply-info">
-  <div class="sec-head"><span class="num">n.004</span><span class="tag">Recruitment</span></div>
-
-  <h2 class="h-lg rv" style="margin-bottom:clamp(30px,3.6vw,54px)">지원 조건은 이게 전부입니다.</h2>
-
-  <div class="spec rv">
-    <article class="cell"><span class="tag">누가</span>
-      <b class="v">재학·휴학·졸업유예<br>그리고 졸업생</b>
-      <span class="d">20기부터 졸업생도 지원 가능. 전공·개발 경험 무관. 약 60명 내외 모집.</span></article>
-    <article class="cell"><span class="tag">언제</span>
-      <b class="v">매주 토요일<br>14:00 ~ 18:00</b>
-      <span class="d">2026년 9월 5일 ~ 12월 26일 · 총 16주. 시험기간 2주는 활동이 없습니다.</span></article>
-    <article class="cell"><span class="tag">어디서</span>
-      <b class="v">서울<br>오프라인</b>
-      <span class="d">정기 활동은 대면입니다. 선발 과정 중 면접만 온라인으로 진행합니다.</span></article>
-    <article class="cell"><span class="tag">얼마</span>
-      <b class="v">1학기<br>50,000원</b>
-      <span class="d">강의실 대관·활동 물품·기수 운영에 사용하며, 내역은 학기 중 부원들에게 공개합니다.</span></article>
-  </div>
-
-  <ol class="sched rv" style="--d:100ms">
-    <li class="now"><span class="st">서류 접수</span><span class="dt">~ 8/23(일) 18:00</span></li>
-    <li><span class="st">서류 발표</span><span class="dt">8/26(수)</span></li>
-    <li><span class="st">온라인 면접</span><span class="dt">8/29(토) ~ 8/30(일)</span></li>
-    <li><span class="st">최종 발표</span><span class="dt">9/2(수)</span></li>
-    <li><span class="st">OT<span class="must">대면 필참</span></span><span class="dt">9/5(토)</span></li>
-  </ol>
-
-  <div class="openbox rv" style="--d:150ms">
-    전공 제한 없습니다. 개발 경험 없어도 지원할 수 있습니다.<br>
-    <span>20기부터는 졸업생도 지원 대상입니다.</span>
+<!-- ═══ 커리큘럼 (간단히) ═══ -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <span class="tag rv">16 Weeks</span>
+    <h2 class="h-sec rv">묻고, 혼자 만들고, 같이 만듭니다.</h2>
+    <p class="sub rv" style="--d:80ms">2026.09.05 ~ 12.26 · 매주 토요일 14:00~18:00</p>
+    <div class="steps">
+      <article class="step rv"><span class="wk">STEP 1 · 1~5주차</span>
+        <h3>링커슈 · 실무자 인터뷰</h3>
+        <p>현직 실무자 인터뷰를 통해 <b>현장에서 검증된 문제 정의</b>를 얻습니다.</p>
+      </article>
+      <article class="step rv" style="--d:80ms"><span class="wk">STEP 2 · 6~10주차</span>
+        <h3>개인 프로젝트</h3>
+        <p>AI 코칭과 매주 피드백을 통해 <b>내 이름으로 설명할 수 있는 결과물</b>을 얻습니다.</p>
+      </article>
+      <article class="step rv" style="--d:160ms"><span class="wk">STEP 3 · 11~16주차</span>
+        <h3>팀 프로젝트</h3>
+        <p>팀으로 부딪히고 조율하는 과정을 통해 <b>함께 만든 결과물과 협업 경험</b>을 얻습니다.</p>
+      </article>
+    </div>
+    <div class="rv" style="--d:220ms;text-align:center;margin-top:clamp(24px,3vw,36px)">
+      <a class="btn btn-o" href="https://instagram.com/linkus_official_" target="_blank" rel="noopener">인스타그램에서 활동 모습 보기</a>
+    </div>
   </div>
 </section>
 
-<!-- ═══ N°005 FAQ ═══ -->
-<section class="sec wrap alt" id="faq">
-  <div class="sec-head"><span class="num">n.005</span><span class="tag">Questions</span></div>
+<!-- ═══ 모집 안내 (독립 섹션) ═══ -->
+<section class="sec alt" id="recruit">
+  <div class="wrap">
+    <span class="tag rv">Recruitment</span>
+    <h2 class="h-sec rv">모집 안내</h2>
+    <p class="sub rv" style="--d:80ms">지원 조건은 이게 전부입니다. 전공·개발 경험은 보지 않습니다.</p>
 
-  <h2 class="h-lg rv" style="margin-bottom:clamp(30px,3.6vw,52px)">지원하기 전에 가장 많이 묻는 것들.</h2>
+    <div class="spec rv" style="--d:120ms">
+      <article class="cell"><span class="k">누가</span>
+        <span class="v">재학·휴학·졸업유예<br>+ 졸업생</span>
+        <span class="d">20기부터 졸업생도 지원 가능. 약 60명 내외 모집.</span></article>
+      <article class="cell"><span class="k">언제</span>
+        <span class="v">매주 토요일<br>14:00~18:00</span>
+        <span class="d">9/5 ~ 12/26 · 16주. 시험기간 2주는 쉽니다.</span></article>
+      <article class="cell"><span class="k">어디서</span>
+        <span class="v">서울<br>오프라인</span>
+        <span class="d">정기 활동은 대면, 면접만 온라인입니다.</span></article>
+      <article class="cell"><span class="k">얼마</span>
+        <span class="v">1학기<br>50,000원</span>
+        <span class="d">대관·물품·운영비. 내역은 부원에게 공개합니다.</span></article>
+    </div>
 
-  <div class="faq rv" id="faqRoot">
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°01</span><span class="qt">학기 중인데 시간이 될까요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>정기 활동은 매주 토요일 14:00~18:00, 4시간입니다. 시험기간 2주는 활동이 없습니다.
-다만 개인 프로젝트와 팀 프로젝트 마감이 가까워지면 평일에도 개인 시간이 들어갑니다.
-"부담 없다"고는 말하지 않겠습니다. 예측 가능한 부담이라고는 말할 수 있습니다.</div></div></div>
+    <ol class="sched rv" style="--d:160ms">
+      <li class="now"><span class="st">서류 접수</span><span class="dt">~ 8/23(일) 18:00</span></li>
+      <li><span class="st">서류 발표</span><span class="dt">8/26(수)</span></li>
+      <li><span class="st">온라인 면접</span><span class="dt">8/29~30</span></li>
+      <li><span class="st">최종 발표</span><span class="dt">9/2(수)</span></li>
+      <li><span class="st">OT<span class="must">필참</span></span><span class="dt">9/5(토)</span></li>
+    </ol>
+  </div>
+</section>
 
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°02</span><span class="qt">개발을 전혀 모르는데 지원해도 되나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>지원할 수 있습니다. 전공과 개발 경험은 지원 자격이 아닙니다. 실제로 비전공자 부원이 매 기수 함께합니다.
-다만 16주 동안 직접 만드는 과정이 있으므로, 모르는 것을 찾아가며 붙잡고 있을 각오는 필요합니다.
-개인 프로젝트 단계에서 각자의 수준에 맞게 주제를 잡고, AI 코칭과 매주 피드백이 함께 갑니다.</div></div></div>
+<!-- ═══ FAQ (핵심만) ═══ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <span class="tag rv">FAQ</span>
+    <h2 class="h-sec rv">자주 묻는 질문</h2>
 
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°03</span><span class="qt">졸업생인데 지원할 수 있나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>네. 20기부터 졸업생도 지원할 수 있습니다.
-OB 멘토가 아니라 신입 부원으로, 다른 지원자와 같은 절차로 지원합니다.</div></div></div>
+    <div class="faq rv">
+      <div class="qa" data-open="false"><button type="button" aria-expanded="false">
+        <span class="qt">개발을 전혀 모르는데 지원해도 되나요?</span><span class="sign" aria-hidden="true">+</span></button>
+        <div class="ans"><div>네. 전공과 개발 경험은 지원 자격이 아니고, 매 기수 비전공자 부원이 함께합니다.
+개인 프로젝트는 각자의 수준에 맞게 주제를 잡고, AI 코칭과 매주 피드백이 함께 갑니다.</div></div></div>
 
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°04</span><span class="qt">학년·전공·지역 제한이 있나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>학년·전공 제한은 없습니다.
-대학교 재학생·휴학생·졸업유예생, 그리고 20기부터는 졸업생도 지원할 수 있습니다.
-다만 정기 활동이 서울에서 대면으로 진행되므로, 매주 토요일 서울에서 활동 가능해야 합니다.</div></div></div>
+      <div class="qa" data-open="false"><button type="button" aria-expanded="false">
+        <span class="qt">학기 중인데 시간이 될까요?</span><span class="sign" aria-hidden="true">+</span></button>
+        <div class="ans"><div>정기 활동은 매주 토요일 14:00~18:00이고, 시험기간 2주는 쉽니다.
+토요일 오후만 비워두면 인턴·다른 동아리와 병행하는 부원도 많습니다.
+프로젝트 마감 전에는 개인 시간이 더 들어갑니다. 부담이 없다기보다, 예측 가능한 부담입니다.</div></div></div>
 
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°05</span><span class="qt">다른 동아리나 인턴과 병행할 수 있나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>가능합니다. 실제로 병행하는 부원이 많습니다.
-다만 토요일 오후는 비워두셔야 하고, 팀 프로젝트가 시작되면 일정이 겹칠 때 팀 전체에 영향이 갑니다.
-지원 전에 9월 5일부터 12월 26일까지의 토요일 일정을 한 번 확인해보시길 권합니다.</div></div></div>
+      <div class="qa" data-open="false"><button type="button" aria-expanded="false">
+        <span class="qt">면접은 어떻게 진행되나요?</span><span class="sign" aria-hidden="true">+</span></button>
+        <div class="ans"><div>8/29(토)~30(일) 온라인 화상 면접입니다. 사전 과제, 기술 시험, 코딩 테스트 모두 없습니다.
+실력이나 스펙보다 16주를 끝까지 해낼 사람인지를 봅니다. 시간대는 서류 발표 때 조율합니다.</div></div></div>
 
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°06</span><span class="qt">활동비 5만원은 어디에 쓰이나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>1학기 활동비 50,000원이 있습니다.
-강의실 대관, 활동 물품, 기수 운영에 사용하며 개인에게 돌아가는 비용은 없습니다.
-최종 합격 후 OT 전까지 납부하고, 사용 내역은 학기 중 부원들에게 공개합니다.</div></div></div>
+      <div class="qa" data-open="false"><button type="button" aria-expanded="false">
+        <span class="qt">활동비 5만원은 어디에 쓰이나요?</span><span class="sign" aria-hidden="true">+</span></button>
+        <div class="ans"><div>강의실 대관, 활동 물품, 기수 운영에 사용합니다. 최종 합격 후 OT 전까지 납부하고,
+사용 내역은 학기 중 부원들에게 공개합니다.</div></div></div>
 
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°07</span><span class="qt">선발 기준이 뭔가요? 몇 명 뽑나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>서류와 면접으로 선발하며, 약 60명 내외를 모집합니다. (면접 결과에 따라 조정될 수 있습니다.)
-지금까지의 실력이나 스펙보다, 16주를 끝까지 해낼 사람인지를 봅니다.</div></div></div>
-
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°08</span><span class="qt">면접은 어떻게 진행되나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>8월 29일(토)~30일(일)에 온라인 화상 면접으로 진행됩니다.
-사전 과제는 없습니다. 지원 동기와 16주 일정에 참여할 수 있는지를 확인하는 대화에 가깝습니다.
-기술 시험이나 코딩 테스트는 없으니 편하게 오시면 됩니다.
-가능한 시간대는 8월 26일 서류 발표 때 함께 조율합니다.</div></div></div>
-
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°09</span><span class="qt">중간에 결석하면 어떻게 되나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>학교 일정이나 부득이한 사정은 미리 알려주시면 조율합니다.
-다만 팀 프로젝트가 시작되면 결석은 본인만의 문제가 아니게 됩니다.
-그리고 9월 5일(토) OT는 대면 필참입니다.</div></div></div>
-
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°10</span><span class="qt">팀 프로젝트가 부담스럽습니다.</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>팀 프로젝트 전에 개인 프로젝트가 먼저 있습니다.
-링커슈(실무자 컨택) → 개인 프로젝트 → 팀 프로젝트 순서이고,
-혼자 한 번 끝까지 만들어본 뒤에 팀에 들어가도록 설계했습니다.</div></div></div>
-
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°11</span><span class="qt">온라인으로만 참여할 수 있나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>정기 활동은 서울에서 대면으로 진행됩니다. 온라인 참여만으로는 활동이 어렵습니다.
-선발 과정 중 면접만 온라인으로 진행됩니다.</div></div></div>
-
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°12</span><span class="qt">지원서는 어떻게 제출하나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>구글폼으로 제출합니다. <a href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">forms.gle/bUp2jUhE1HpQwmK57</a>
-정답이 있는 문항은 없습니다. 잘 쓴 글보다 솔직한 답을 봅니다.
-마감은 8월 23일(일) 18:00이며, 마감 시각 이후에는 제출할 수 없습니다.
-제출 후 수정하고 싶은 내용이 있으면 카카오톡 채널로 알려주세요.</div></div></div>
-
-    <div class="qa" data-open="false"><button type="button" aria-expanded="false">
-      <span class="qn">N°13</span><span class="qt">더 궁금한 게 있으면 어디로 물어보나요?</span><span class="sign" aria-hidden="true">+</span></button>
-      <div class="ans"><div>카카오톡 채널(<a href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">pf.kakao.com/_ccQMM</a>) 또는 인스타그램 @linkus_official_ DM으로 물어보세요.
+      <div class="qa" data-open="false"><button type="button" aria-expanded="false">
+        <span class="qt">더 궁금한 게 있으면 어디로 물어보나요?</span><span class="sign" aria-hidden="true">+</span></button>
+        <div class="ans"><div>카카오톡 채널(<a href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">pf.kakao.com/_ccQMM</a>) 또는 인스타그램 <a href="https://instagram.com/linkus_official_" target="_blank" rel="noopener">@linkus_official_</a> DM으로 물어보세요.
 지원 여부와 상관없이 답변드립니다.</div></div></div>
+    </div>
   </div>
 </section>
 
-<!-- ═══ N°006 APPLY ═══ -->
-<section class="sec wrap apply" id="apply">
-  <div class="sec-head"><span class="num">n.006</span><span class="tag">Apply</span></div>
-  <h2 class="h-xl rv">고민한 시간만큼,<br>지원서 한 장이면 됩니다.</h2>
-  <p class="rv" style="--d:100ms;color:var(--ink-70);max-width:40ch;margin-bottom:clamp(28px,3.4vw,44px)">
-    준비가 다 된 사람을 뽑는 게 아닙니다. 16주 동안 끝까지 해볼 사람을 찾습니다.
-  </p>
-  <div class="row rv" style="--d:150ms">
-    <a class="btn btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
-    <a class="btn btn-o" href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">카카오톡 문의</a>
-    <span class="dl">서류 마감 · 2026.08.23(일) 18:00</span>
+<!-- ═══ APPLY ═══ -->
+<section class="sec apply" id="apply">
+  <div class="wrap">
+    <h2 class="h-sec rv">지원서 한 장이면 됩니다.</h2>
+    <p class="sub rv" style="--d:80ms">준비된 사람이 아니라, 16주를 끝까지 해볼 사람을 찾습니다.</p>
+    <div class="row rv" style="--d:140ms">
+      <a class="btn btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
+      <a class="btn btn-o btn-lg" href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">카카오톡 문의</a>
+    </div>
+    <p class="dl rv" style="--d:180ms">서류 마감 · 2026.08.23(일) 18:00</p>
   </div>
 </section>
 
 </main>
 
-<footer class="wrap">
-  <div class="f-grid">
-    <p><strong>Link-Us</strong>국내 최초 실무형 AI 커리어<br>개발 커뮤니티 · 2016년 시작, 20기</p>
-    <p><strong>Contact</strong>
-      <a href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">카카오톡 채널</a><br>
-      <a href="https://instagram.com/linkus_official_" target="_blank" rel="noopener">@linkus_official_</a></p>
-    <p><strong>Apply</strong>
-      <a href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">지원서 작성하기 ↗</a><br>
-      마감 2026.08.23(일) 18:00</p>
-  </div>
-  <div class="f-bottom">
-    <p>링커스는 대학생에 의해 자치적으로 운영되며 정치·종교·시민단체와 전혀 무관합니다.</p>
-    <p>© 2026 Link-Us</p>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <p><strong>Link-Us</strong>실무형 AI 커리어 동아리<br>2016년 시작 · 20기</p>
+      <p><strong>Contact</strong>
+        <a href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">카카오톡 채널</a><br>
+        <a href="https://instagram.com/linkus_official_" target="_blank" rel="noopener">@linkus_official_</a></p>
+      <p><strong>Apply</strong>
+        <a href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">지원서 작성하기 ↗</a><br>
+        마감 2026.08.23(일) 18:00</p>
+    </div>
+    <div class="f-bottom">
+      <p>링커스는 대학생에 의해 자치적으로 운영되며 정치·종교·시민단체와 전혀 무관합니다.</p>
+      <p>© 2026 Link-Us</p>
+    </div>
   </div>
 </footer>
 
@@ -639,10 +416,6 @@ OB 멘토가 아니라 신입 부원으로, 다른 지원자와 같은 절차로
 (function(){
   'use strict';
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* 마퀴 무한 루프 */
-  var mq = document.getElementById('mq');
-  if (mq) mq.innerHTML += mq.innerHTML;
 
   /* 스크롤 리빌 */
   var rvs = document.querySelectorAll('.rv');
