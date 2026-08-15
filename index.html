@@ -187,7 +187,6 @@ button,a{-webkit-tap-highlight-color:transparent}
 .rail-col h3{font-size:clamp(21px,2.2vw,28px)}
 .rail-col p{margin-top:14px;font-size:15px;color:var(--muted);line-height:1.65;max-width:30ch}
 .rail-col p b{color:var(--ink);font-weight:700}
-.rail-foot{margin-top:clamp(28px,3.4vw,40px)}
 @media(max-width:820px){
   .rail{grid-template-columns:1fr}
   .rail-col{border-left:0;padding-left:0;border-top:1px solid var(--line)}
@@ -246,6 +245,14 @@ button,a{-webkit-tap-highlight-color:transparent}
   white-space:pre-line;font-size:15.5px;line-height:1.75}
 .ans a{font-weight:700;color:var(--ink);word-break:break-all}
 @media(max-width:820px){.faq-grid{grid-template-columns:1fr}}
+
+/* ===== SCENES ===== */
+#scenes{background:var(--paper)}
+.scenes-grid{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.25fr);gap:clamp(28px,6vw,80px);align-items:center}
+.scenes-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:clamp(24px,3vw,34px)}
+.yt{position:relative;aspect-ratio:16/9;background:var(--ink);border:1px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:820px){.scenes-grid{grid-template-columns:1fr}}
 
 /* ===== MARQUEE ===== */
 .mq{border-block:1px solid var(--ink);background:var(--paper);overflow:hidden;
@@ -391,8 +398,22 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
         <p>팀으로 부딪히고 조율하는 과정을 통해 <b>함께 만든 결과물과 협업 경험</b>을 얻습니다.</p>
       </article>
     </div>
-    <div class="rail-foot rv" style="--d:240ms">
-      <a class="tlink" href="https://instagram.com/linkus_official_" target="_blank" rel="noopener">인스타그램에서 활동 모습 보기 <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<!-- ═══ 활동 영상 ═══ -->
+<section class="sec" id="scenes">
+  <div class="wrap scenes-grid">
+    <div>
+      <h2 class="h2 rv">말보다 장면이<br>빠르니까.</h2>
+      <p class="lede rv" style="--d:80ms">10년간의 활동이 117개의 영상으로 남아 있습니다. 어떤 분위기인지 3분이면 알 수 있어요.</p>
+      <div class="scenes-links rv" style="--d:140ms">
+        <a class="tlink" href="https://www.youtube.com/@linkus16" target="_blank" rel="noopener">유튜브 채널 <span aria-hidden="true">↗</span></a>
+        <a class="tlink" href="https://instagram.com/linkus_official_" target="_blank" rel="noopener">인스타그램 <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="yt rv" style="--d:120ms">
+      <iframe src="https://www.youtube-nocookie.com/embed/gClkxai8kw4" title="링커스 활동 소개 영상: 활동 전 필수시청" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </section>
