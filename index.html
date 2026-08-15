@@ -199,9 +199,9 @@ button,a{-webkit-tap-highlight-color:transparent}
 /* ===== RECRUIT ===== */
 #recruit{background:var(--paper)}
 .spec{display:grid;grid-template-columns:1fr 1fr;
-  margin-top:clamp(36px,5vw,60px)}
-.spec-cell{border:1px solid var(--line);padding:clamp(20px,2.6vw,30px);
-  margin:0 -1px -1px 0}
+  margin-top:clamp(36px,5vw,60px);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.spec-cell{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:clamp(20px,2.6vw,30px);margin:0}
 .spec-cell .k{display:inline-block;background:var(--lime);color:var(--ink);
   padding:.25em .7em;font-size:12px;font-weight:800;letter-spacing:.02em}
 .spec-cell .v{display:block;margin-top:16px;font-size:clamp(19px,2.1vw,25px);font-weight:800;
@@ -270,6 +270,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   margin-top:clamp(30px,4vw,44px)}
 #apply .btn-out{color:var(--paper);border-color:rgba(247,245,238,.5)}
 #apply .btn-out:hover{background:rgba(247,245,238,.12)}
+#apply :focus-visible{outline-color:var(--lime)}
 .apply-dl{margin-top:clamp(20px,2.6vw,28px);font-size:14px;color:rgba(247,245,238,.6)}
 @media(max-width:520px){.apply-row .btn{flex:1 1 100%}}
 
@@ -374,19 +375,19 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
     <p class="lede rv" style="--d:80ms">2026.09.05 ~ 12.26 · 매주 토요일 14:00~18:00</p>
     <div class="rail">
       <article class="rail-col rv">
-        <p class="rail-meta"><span>01</span><span>1~5주차</span></p>
+        <p class="rail-meta"><span>1~5주차</span></p>
         <div class="rail-badge" aria-hidden="true">01</div>
         <h3>링커슈 · 실무자 인터뷰</h3>
         <p>현직 실무자 인터뷰를 통해 <b>현장에서 검증된 문제 정의</b>를 얻습니다.</p>
       </article>
       <article class="rail-col rv" style="--d:90ms">
-        <p class="rail-meta"><span>02</span><span>6~10주차</span></p>
+        <p class="rail-meta"><span>6~10주차</span></p>
         <div class="rail-badge" aria-hidden="true">02</div>
         <h3>개인 프로젝트</h3>
         <p>AI 코칭과 매주 피드백을 통해 <b>내 이름으로 설명할 수 있는 결과물</b>을 얻습니다.</p>
       </article>
       <article class="rail-col rv" style="--d:180ms">
-        <p class="rail-meta"><span>03</span><span>11~16주차</span></p>
+        <p class="rail-meta"><span>11~16주차</span></p>
         <div class="rail-badge" aria-hidden="true">03</div>
         <h3>팀 프로젝트</h3>
         <p>팀으로 부딪히고 조율하는 과정을 통해 <b>함께 만든 결과물과 협업 경험</b>을 얻습니다.</p>
@@ -473,7 +474,7 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
 
 <!-- ═══ MARQUEE ═══ -->
 <div class="mq" aria-hidden="true">
-  <div><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span></div>
+  <div><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span><span>20TH RECRUITING · 지원 마감 8월 23일</span></div>
 </div>
 
 <!-- ═══ APPLY ═══ -->
@@ -523,13 +524,17 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* 스크롤 리빌 */
-  var rvs = document.querySelectorAll('.rv');
+  var rvs = Array.prototype.slice.call(document.querySelectorAll('.rv'));
   if (reduce) { rvs.forEach(function(e){ e.classList.add('in'); }); }
   else {
     var io = new IntersectionObserver(function(es, ob){
       es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); ob.unobserve(e.target); } });
     }, {rootMargin:'0px 0px -10% 0px', threshold:0.1});
-    rvs.forEach(function(e){ io.observe(e); });
+    /* 첫 화면 요소는 즉시 노출, 나머지만 관찰 */
+    rvs.forEach(function(e){
+      if (e.getBoundingClientRect().top < innerHeight) e.classList.add('in');
+      else io.observe(e);
+    });
   }
 
   /* 헤더 배경 (sentinel 기반, scroll 리스너 없음) */
@@ -554,6 +559,7 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
     });
   });
   if (qas.length) setQA(qas[0], true);
+  if (document.fonts) document.fonts.ready.then(function(){ qas.forEach(function(i){ if (i.dataset.open === 'true') setQA(i, true); }); });
   addEventListener('resize', function(){
     qas.forEach(function(i){ if (i.dataset.open === 'true') setQA(i, true); });
   });
