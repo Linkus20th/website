@@ -23,14 +23,14 @@
 <style>
 /* ===== TOKENS : 관계의 편집실 (라이트 고정) ===== */
 :root{
-  --paper:#f7f5ee;
-  --paper-deep:#eceadf;
+  --paper:#f7f9fc;
+  --paper-deep:#e9eff7;
   --ink:#15161b;
-  --muted:#5d5e57;
-  --lime:#d6ff45;
-  --lime-hi:#e6ff8c;
-  --line:rgba(21,22,27,.16);
-  --line-2:rgba(21,22,27,.32);
+  --muted:#5a6472;
+  --accent:#4aa9f5;
+  --accent-hi:#7cc2fa;
+  --line:rgba(21,27,36,.16);
+  --line-2:rgba(21,27,36,.32);
 
   --f:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
   --gut:clamp(20px,5vw,72px);
@@ -48,7 +48,7 @@ body{
   html{scroll-behavior:auto}
   *{animation:none!important;transition-duration:.001ms!important}
 }
-::selection{background:var(--lime);color:var(--ink)}
+::selection{background:var(--accent);color:var(--ink)}
 h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.04em;line-height:1.12}
 p{margin:0}
 a{color:inherit}
@@ -73,8 +73,8 @@ button,a{-webkit-tap-highlight-color:transparent}
   font:inherit;font-size:15px;font-weight:700;letter-spacing:-.01em;
   text-decoration:none;cursor:pointer;white-space:nowrap;
   transition:transform .2s var(--ease),background .2s var(--ease),box-shadow .2s var(--ease)}
-.btn-lime{background:var(--lime);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
-.btn-lime:hover{background:var(--lime-hi);transform:translateY(-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn-accent{background:var(--accent);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn-accent:hover{background:var(--accent-hi);transform:translateY(-2px);box-shadow:6px 6px 0 var(--ink)}
 .btn-ink{background:var(--ink);color:var(--paper)}
 .btn-ink:hover{background:#31333c;transform:translateY(-2px)}
 .btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
@@ -92,12 +92,10 @@ button,a{-webkit-tap-highlight-color:transparent}
 .hd{position:fixed;inset:0 0 auto;z-index:60;height:var(--hd);
   display:flex;align-items:center;gap:16px;padding-inline:var(--gut);
   border-bottom:1px solid transparent;transition:background .25s var(--ease),border-color .25s var(--ease)}
-.hd.on{background:rgba(247,245,238,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+.hd.on{background:rgba(247,249,252,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   border-bottom-color:var(--line-2)}
-.mark{display:inline-flex;align-items:center;gap:7px;font-size:19px;font-weight:800;
-  letter-spacing:-.03em;text-decoration:none}
-.mark i{width:6px;height:6px;border-radius:50%;background:var(--lime);
-  box-shadow:0 0 0 1px var(--line-2)}
+.mark{display:inline-flex;align-items:center}
+.mark img{height:26px;width:auto;display:block}
 .nav{display:flex;gap:clamp(18px,2.4vw,34px);margin-left:auto}
 .nav a{position:relative;font-size:14px;font-weight:600;text-decoration:none;
   padding-block:14px}
@@ -124,7 +122,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   color:transparent;-webkit-text-stroke:2px rgba(21,22,27,.14);pointer-events:none;user-select:none}
 .hero h1{font-size:clamp(44px,7vw,96px);line-height:1.05;max-width:14ch;
   margin:clamp(18px,2.6vw,30px) 0 0}
-.hero h1 .mk{background-image:linear-gradient(transparent 45%,var(--lime) 45%);
+.hero h1 .mk{background-image:linear-gradient(transparent 45%,var(--accent) 45%);
   background-repeat:no-repeat}
 .hero .lede{margin-top:clamp(20px,2.8vw,30px);font-size:clamp(16px,1.6vw,19px);max-width:34ch}
 .hero-cta{display:flex;align-items:center;gap:clamp(16px,2.4vw,28px);flex-wrap:wrap;
@@ -180,11 +178,11 @@ button,a{-webkit-tap-highlight-color:transparent}
 .rail-col{padding:clamp(20px,2.6vw,30px) clamp(16px,2vw,28px) clamp(28px,3.4vw,42px);
   border-left:1px solid var(--line);transition:background .25s var(--ease)}
 .rail-col:first-child{border-left:0;padding-left:0}
-.rail-col:hover{background:rgba(247,245,238,.55)}
+.rail-col:hover{background:rgba(247,249,252,.55)}
 .rail-meta{display:flex;align-items:baseline;gap:10px;font-size:12px;font-weight:800;
   letter-spacing:.1em;color:var(--muted)}
 .rail-badge{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;
-  background:var(--lime);color:var(--ink);font-size:17px;font-weight:800;letter-spacing:-.02em;
+  background:var(--accent);color:var(--ink);font-size:17px;font-weight:800;letter-spacing:-.02em;
   margin:clamp(24px,3vw,40px) 0 clamp(18px,2.4vw,26px)}
 .rail-col h3{font-size:clamp(21px,2.2vw,28px)}
 .rail-col p{margin-top:14px;font-size:15px;color:var(--muted);line-height:1.65;max-width:30ch}
@@ -202,7 +200,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   margin-top:clamp(36px,5vw,60px);border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .spec-cell{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
   padding:clamp(20px,2.6vw,30px);margin:0}
-.spec-cell .k{display:inline-block;background:var(--lime);color:var(--ink);
+.spec-cell .k{display:inline-block;background:var(--accent);color:var(--ink);
   padding:.25em .7em;font-size:12px;font-weight:800;letter-spacing:.02em}
 .spec-cell .v{display:block;margin-top:16px;font-size:clamp(19px,2.1vw,25px);font-weight:800;
   letter-spacing:-.035em;line-height:1.3}
@@ -214,11 +212,11 @@ button,a{-webkit-tap-highlight-color:transparent}
 .sched li{position:relative;padding-top:26px;padding-right:12px}
 .sched li::before{content:"";position:absolute;left:0;top:2px;width:11px;height:11px;
   border-radius:50%;background:var(--paper);border:1px solid var(--ink)}
-.sched li.now::before{background:var(--lime)}
+.sched li.now::before{background:var(--accent)}
 .sched .st{display:block;font-size:15px;font-weight:800;letter-spacing:-.02em}
 .sched .dt{display:block;margin-top:5px;font-size:13.5px;color:var(--muted)}
 .must{display:inline-block;margin-left:6px;padding:.15em .5em;
-  font-size:11px;font-weight:800;background:var(--lime);color:var(--ink)}
+  font-size:11px;font-weight:800;background:var(--accent);color:var(--ink)}
 @media(max-width:760px){
   .spec{grid-template-columns:1fr}
   .sched{grid-template-columns:1fr;gap:0}
@@ -242,7 +240,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .qa .sign{flex:none;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;
   border:1px solid var(--line-2);font-size:16px;line-height:1;
   transition:transform .35s var(--ease),background .35s var(--ease),border-color .35s var(--ease)}
-.qa[data-open="true"] .sign{transform:rotate(45deg);background:var(--lime);border-color:var(--lime)}
+.qa[data-open="true"] .sign{transform:rotate(45deg);background:var(--accent);border-color:var(--accent)}
 .ans{overflow:hidden;height:0;transition:height .4s var(--ease)}
 .ans>div{padding:0 0 clamp(18px,2.2vw,24px);color:var(--muted);max-width:60ch;
   white-space:pre-line;font-size:15.5px;line-height:1.75}
@@ -263,15 +261,15 @@ button,a{-webkit-tap-highlight-color:transparent}
 #apply .wrap{position:relative;z-index:2}
 .apply-loop{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);
   width:min(96vw,900px);height:auto;pointer-events:none;opacity:.75}
-.apply-loop path{fill:none;stroke:var(--lime);stroke-width:3;opacity:.6}
+.apply-loop path{fill:none;stroke:var(--accent);stroke-width:3;opacity:.6}
 #apply .h2{max-width:none}
-#apply .lede{color:rgba(247,245,238,.72);margin:clamp(18px,2.4vw,26px) auto 0;max-width:38ch}
+#apply .lede{color:rgba(247,249,252,.72);margin:clamp(18px,2.4vw,26px) auto 0;max-width:38ch}
 .apply-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;
   margin-top:clamp(30px,4vw,44px)}
-#apply .btn-out{color:var(--paper);border-color:rgba(247,245,238,.5)}
-#apply .btn-out:hover{background:rgba(247,245,238,.12)}
-#apply :focus-visible{outline-color:var(--lime)}
-.apply-dl{margin-top:clamp(20px,2.6vw,28px);font-size:14px;color:rgba(247,245,238,.6)}
+#apply .btn-out{color:var(--paper);border-color:rgba(247,249,252,.5)}
+#apply .btn-out:hover{background:rgba(247,249,252,.12)}
+#apply :focus-visible{outline-color:var(--accent)}
+.apply-dl{margin-top:clamp(20px,2.6vw,28px);font-size:14px;color:rgba(247,249,252,.6)}
 @media(max-width:520px){.apply-row .btn{flex:1 1 100%}}
 
 /* ===== FOOTER ===== */
@@ -291,12 +289,12 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
 /* ===== MOBILE DOCK ===== */
 .dock{position:fixed;inset:auto 0 0;z-index:70;display:none;gap:10px;
   padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));
-  background:rgba(247,245,238,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(247,249,252,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-top:1px solid var(--ink);
   transform:translateY(130%);transition:transform .4s var(--ease)}
 .dock.show{transform:none}
 .dock .btn{flex:1;min-height:48px;font-size:15px;box-shadow:none}
-.dock .btn-lime:hover{box-shadow:none;transform:none}
+.dock .btn-accent:hover{box-shadow:none;transform:none}
 .dock .btn-out{flex:0 0 84px}
 @media(max-width:860px){.dock{display:flex}}
 </style>
@@ -305,14 +303,14 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
 <body id="top">
 
 <header class="hd" id="hd">
-  <a class="mark" href="#top">LINKUS<i aria-hidden="true"></i></a>
+  <a class="mark" href="#top" aria-label="링커스 홈"><img src="logo.png" alt="" height="26"></a>
   <nav class="nav" aria-label="주요 섹션">
     <a href="#about">소개</a>
     <a href="#how">커리큘럼</a>
     <a href="#recruit">모집 안내</a>
     <a href="#faq">FAQ</a>
   </nav>
-  <a class="btn btn-lime" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">지원하기</a>
+  <a class="btn btn-accent" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">지원하기</a>
 </header>
 
 <div id="sentinel" aria-hidden="true" style="position:absolute;top:8px;height:1px;width:1px"></div>
@@ -328,7 +326,7 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
     <p class="lede rv" style="--d:160ms">현직 실무자를 인터뷰해 진짜 문제를 찾고,
       16주 동안 AI로 두 개의 결과물을 만들며 성장합니다.</p>
     <div class="hero-cta rv" style="--d:240ms">
-      <a class="btn btn-lime btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
+      <a class="btn btn-accent btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
       <a class="tlink" href="#recruit">모집 안내 보기 <span aria-hidden="true">↓</span></a>
     </div>
   </div>
@@ -486,7 +484,7 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
     <h2 class="h2 rv">지원서 한 장이면 됩니다.</h2>
     <p class="lede rv" style="--d:80ms">준비된 사람이 아니라, 16주를 끝까지 해볼 사람을 찾습니다.</p>
     <div class="apply-row rv" style="--d:140ms">
-      <a class="btn btn-lime btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
+      <a class="btn btn-accent btn-lg" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
       <a class="btn btn-out btn-lg" href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">카카오톡 문의</a>
     </div>
     <p class="apply-dl rv" style="--d:180ms">서류 마감 · 2026.08.23(일) 18:00</p>
@@ -515,7 +513,7 @@ footer{background:var(--paper);border-top:1px solid var(--ink);
 
 <div class="dock" id="dock">
   <a class="btn btn-out" href="https://pf.kakao.com/_ccQMM" target="_blank" rel="noopener">문의</a>
-  <a class="btn btn-lime" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
+  <a class="btn btn-accent" href="https://forms.gle/bUp2jUhE1HpQwmK57" target="_blank" rel="noopener">20기 지원하기</a>
 </div>
 
 <script>
