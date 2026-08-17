@@ -4,25 +4,45 @@
 
 **배포 주소** — https://medeoduck.github.io/linkus20/
 
+## 실행
+
+```bash
+npm i
+npm run dev     # 개발 서버
+npm run build   # dist/ 로 빌드
+```
+
+Vite + React 기반입니다.
+
 ## 구성
 
 | 파일 | 설명 |
 |---|---|
-| `index.html` | 페이지 전체 (HTML·CSS·JS 단일 파일, 빌드 불필요) |
-| `og/linkus-20th-og.png` | 카카오톡·SNS 공유용 썸네일 (1200×630) |
-
-외부 의존성은 웹폰트(Pretendard / Syne / Archivo / DM Mono)뿐이며, 그 외 에셋은 모두 CSS로 그렸습니다.
+| `index.html` | HTML 껍데기 (메타 태그·OG·웹폰트) |
+| `src/main.jsx` | 진입점 |
+| `src/App.jsx` | 섹션 조립 + 스크롤 리빌·헤더·하단 CTA 스크립트 |
+| `src/sections/*.jsx` | 섹션별 컴포넌트 (Header, Hero, Proof, About, How, Scenes, Recruit, Faq, Marquee, Apply, Footer, Dock) |
+| `src/links.js` | 지원서·카카오톡·인스타·유튜브 링크 |
+| `src/style.css` | 전체 스타일 |
+| `src/assets/` | 로고·활동 사진 |
+| `public/og/linkus-20th-og.png` | 카카오톡·SNS 공유용 썸네일 (1200×630) |
 
 ## 페이지 구조
 
-히어로 → `n.001` What → `n.002` How(16주 커리큘럼 + Decision Log) → `n.003` Why(20기 변화) → `n.004` 모집 요강 → `n.005` FAQ → `n.006` Apply
+히어로 → 수상 이력 → 소개 → 커리큘럼 → 활동 영상·사진 → 모집 안내 → FAQ → 마퀴 → 지원
 
 ## 수정 가이드
 
-- **색상** — `:root`의 `--paper`(톤 A), `--tone-b`(톤 B, 섹션 교차 배경), `--neon`(액센트)
-- **섹션 2톤 교차** — `<section>`에 `alt` 클래스를 붙이면 톤 B가 적용됩니다. 위아래 15%가 페이드아웃되어 경계선이 보이지 않습니다.
+- **문구·마크업** — 고치려는 섹션의 `src/sections/<이름>.jsx` 하나만 보면 됩니다.
+- **링크** — `src/links.js` 한 곳에서 관리합니다.
+- **색상** — `src/style.css` 최상단 `:root`의 `--paper`, `--paper-deep`, `--accent`
 - **커리큘럼 순서는 `링커슈 → 개인 프로젝트 → 팀 프로젝트` 고정입니다.** 일부 구자료(카드뉴스)에 `팀 → 개인` 순서가 남아 있으나 폐기된 버전이므로 따르지 마세요.
-- **마감일 변경 시** 수정할 곳: 상단 고정바, 히어로 메타, `n.004` 선발 일정, `n.005` FAQ N°12, `n.006` 하단, `og/linkus-20th-og.png` 재제작
+- **마감일 변경 시** 수정할 곳: `Header.jsx`, `Hero.jsx`, `Recruit.jsx`(선발 일정), `Marquee.jsx`, `Apply.jsx`, `Footer.jsx`, `index.html`의 메타 태그, `public/og/linkus-20th-og.png` 재제작
+
+## 배포
+
+`main`에 push하면 GitHub Actions(`.github/workflows/deploy.yml`)가 빌드해 GitHub Pages로 배포합니다.
+저장소 **Settings → Pages → Source**를 **GitHub Actions**로 설정해 두어야 합니다.
 
 ## 모집 정보
 
