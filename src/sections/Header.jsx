@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import { LINKS } from '../links.js'
+import { LINKS, CLOSED } from '../links.js'
 
 export default function Header() {
   return (
@@ -11,7 +11,9 @@ export default function Header() {
         <a href="#recruit">모집 안내</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a className="btn btn-accent" href={LINKS.form} target="_blank" rel="noopener">지원하기</a>
+      {CLOSED
+        ? <span className="btn btn-accent is-closed" aria-disabled="true">모집 마감</span>
+        : <a className="btn btn-accent" href={LINKS.form} target="_blank" rel="noopener">지원하기</a>}
     </header>
   )
 }

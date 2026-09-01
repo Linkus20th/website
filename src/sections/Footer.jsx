@@ -1,4 +1,4 @@
-import { LINKS } from '../links.js'
+import { LINKS, CLOSED } from '../links.js'
 
 export default function Footer() {
   return (
@@ -10,8 +10,10 @@ export default function Footer() {
             <a href={LINKS.kakao} target="_blank" rel="noopener">카카오톡 채널</a><br/>
             <a href={LINKS.insta} target="_blank" rel="noopener">@linkus_official_</a></p>
           <p><strong>Apply</strong>
-            <a href={LINKS.form} target="_blank" rel="noopener">지원서 작성하기 ↗</a><br/>
-            마감 2026.08.23(일) 18:00</p>
+            {CLOSED
+              ? <>20기 모집 마감<br/>2026.08.23(일) 18:00 종료</>
+              : <><a href={LINKS.form} target="_blank" rel="noopener">지원서 작성하기 ↗</a><br/>
+                마감 2026.08.23(일) 18:00</>}</p>
         </div>
         <div className="f-bottom">
           <p>링커스는 대학생에 의해 자치적으로 운영되며 정치·종교·시민단체와 전혀 무관합니다.</p>

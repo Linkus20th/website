@@ -1,10 +1,14 @@
+import { CLOSED } from '../links.js'
+
 export default function Recruit() {
   return (
     <section className="sec" id="recruit">
       <div className="wrap">
         <p className="eyebrow rv">RECRUITMENT</p>
         <h2 className="h2 rv" style={{'--d':'60ms',marginTop:14}}>모집 안내</h2>
-        <p className="lede rv" style={{'--d':'120ms'}}>지원 조건은 이게 전부입니다. 전공·개발 경험은 보지 않습니다.</p>
+        <p className="lede rv" style={{'--d':'120ms'}}>{CLOSED
+          ? '20기 모집은 마감되었습니다. 다음 기수 모집 조건도 이와 비슷합니다.'
+          : '지원 조건은 이게 전부입니다. 전공·개발 경험은 보지 않습니다.'}</p>
 
         <div className="spec rv" style={{'--d':'160ms'}}>
           <article className="spec-cell"><span className="k">누가</span>
@@ -22,7 +26,7 @@ export default function Recruit() {
         </div>
 
         <ol className="sched rv" style={{'--d':'200ms'}}>
-          <li className="now"><span className="st">서류 접수</span><span className="dt">~ 8/23(일) 18:00</span></li>
+          <li className={CLOSED ? '' : 'now'}><span className="st">서류 접수</span><span className="dt">~ 8/23(일) 18:00</span></li>
           <li><span className="st">서류 발표</span><span className="dt">8/26(수)</span></li>
           <li><span className="st">온라인 면접</span><span className="dt">8/29~30</span></li>
           <li><span className="st">최종 발표</span><span className="dt">9/2(수)</span></li>
