@@ -2,7 +2,7 @@
 
 국내 최초 실무형 AI 커리어 개발 커뮤니티 **링커스** 20기 신입 부원 모집 페이지입니다.
 
-**배포 주소** — https://medeoduck.github.io/linkus20/
+**배포 주소** — https://linkus.ai.kr/
 
 ## 실행
 
